@@ -2,238 +2,264 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    <!-- 设置页面编码和视口 -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- 标题、作者、描述和关键词 -->
     <title>Zhao Cunmin / 赵存民 - Resume</title>
-    <!-- 如有独立 CSS 文件，可引入，例如： -->
-    <!-- <link rel="stylesheet" href="styles.css" /> -->
-    <style>
-      /* 内联 CSS，便于示例展示 */
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        color: #333;
-        line-height: 1.6;
-      }
-      .outercontainer {
-        max-width: 960px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-      header {
-        background: #f0f0f0;
-        padding: 10px 0;
-      }
-      header .container {
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-      }
-      header a {
-        text-decoration: none;
-        color: #333;
-        font-weight: bold;
-      }
-      .container.body {
-        padding: 20px 0;
-      }
-      .content {
-        margin-bottom: 40px;
-      }
-      .content h1,
-      .content h2,
-      .content h3 {
-        margin-bottom: 15px;
-      }
-      .content ul {
-        list-style-type: disc;
-        padding-left: 20px;
-      }
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 10px;
-      }
-      table,
-      th,
-      td {
-        border: 1px solid #ddd;
-      }
-      th,
-      td {
-        padding: 8px;
-        text-align: left;
-      }
-      /* Publications / Projects 样式 */
-      .publication {
-        margin-bottom: 30px;
-        overflow: auto;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #eee;
-      }
-      .publication img {
-        float: left;
-        margin-right: 20px;
-      }
-      .publication div.pubinfo {
-        margin-left: 220px;
-        text-align: right;
-      }
-      .publication div.pubinfo p {
-        margin: 4px 0;
-      }
-      /* 响应式处理 */
-      @media screen and (max-width: 600px) {
-        .publication img,
-        .publication div.pubinfo {
-          float: none;
-          margin: 0 auto;
-          text-align: center;
-          margin-bottom: 10px;
-        }
-        .publication div.pubinfo {
-          margin-left: 0;
-        }
-      }
-    </style>
+    <meta name="author" content="Zhao Cunmin / 赵存民" />
+    <meta name="description" content="Resume of Zhao Cunmin / 赵存民, Research Assistant at HKBU/Prof. Zhao Zhongying Lab" />
+    <meta name="keywords" content="赵存民, Resume, HKBU, Research Assistant, Biotechnology" />
+    
+    <!-- 引入外部 CSS 文件（字体和主要样式） -->
+    <link rel="stylesheet" href="./renjie_files/font.css">
+    <link rel="stylesheet" href="./renjie_files/main.css">
+    
+    <!-- 引入外部 JS 脚本 -->
+    <script src="./renjie_files/main.js"></script>
+    <script src="./renjie_files/scroll.js"></script>
+    <script async type="text/javascript" src="./renjie_files/google.js"></script>
   </head>
+  
   <body>
     <div class="outercontainer">
-      <!-- 页头导航 -->
+      
+      <!-- 页头部分，结构及导航参照示例代码 -->
+      <script src="./renjie_files/header.js"></script>
       <header>
-        <div class="container">
-          <div class="ftheader text"><a href="#home">主页</a></div>
-          <div class="ftsubheader text"><a href="#experience">经历</a></div>
-          <div class="ftsubheader text"><a href="#research">研究方向</a></div>
-          <div class="ftsubheader text"><a href="#projects">项目与出版物</a></div>
+        <div class="container header">
+          <div class="ftheader text">
+            <a href="#home">赵存民</a>
+          </div>
+          <div class="ftsubheader text">
+            <a href="#experience">经历</a>
+          </div>
+          <div class="ftsubheader text">
+            <a href="#research">研究方向</a>
+          </div>
+          <div class="ftsubheader text">
+            <a href="#projects">项目与出版物</a>
+          </div>
         </div>
       </header>
-  
+      
+      <!-- 主体内容 -->
       <div class="container body">
-        <!-- 个人信息 -->
+        
+        <!-- [Home] 个人信息与简介 -->
         <div class="content heading anchor" id="home">
+          <!-- 个人照片区域；替换 src 为你的照片地址 -->
+          <div class="img">
+            <img class="img_responsive" src="./zhaocunmin_photo.png" alt="Photo of Zhao Cunmin" />
+          </div>
+          
+          <!-- 个人详细信息 -->
           <div class="text info">
             <h1>Zhao Cunmin / 赵存民</h1>
+            <div>性别：男</div>
+            <div>年龄：24</div>
+            <div>WeChat: SZ656739769</div>
+            <div>Email: 19251211@life.hkbu.edu.hk</div>
+            <div>B.Sc. in Biotechnology (Genetics and Developmental Biology)</div>
+            <div>Minor in Computer Science (CV &amp; EE)</div>
+            <div>Current Position: Research Assistant</div>
+          </div>
+          
+          <!-- 当前研究兴趣 -->
+          <div class="text topic">
+            <div class="title">Current Research Interests</div>
             <ul>
-              <li>性别：男</li>
-              <li>年龄：24</li>
-              <li>WeChat：SZ656739769</li>
-              <li>邮箱：19251211@life.hkbu.edu.hk</li>
-              <li>B.Sc. in Biotechnology (Genetics and Developmental Biology)</li>
-              <li>Minor in Computer Science (CV &amp; EE)</li>
-              <li>Now: Research Assistant</li>
+              <li>Fluorescence Microscopy Image Processing</li>
+              <li>Deep Learning in Image Denoising and Segmentation</li>
+              <li>Quantitative &amp; Developmental Biology</li>
+            </ul>
+          </div>
+          
+          <!-- 简短描述 -->
+          <div class="text">
+            <p>
+              I work at HKBU/Prof. Zhao Zhongying Lab focusing on research in microscopy imaging and computational biology.
+            </p>
+          </div>
+        </div>
+        
+        <!-- [Experience] 工作与教育经历 -->
+        <div class="content anchor" id="experience">
+          <div class="text front">
+            <h3>Experience</h3>
+            <ul>
+              <li>
+                <strong>HKBU/Prof. Zhao Zhongying Lab</strong> – Research Assistant &amp; Student-helper (2021.3 ~ 2025.5)
+              </li>
+              <li>
+                <strong>Tsinghua University</strong> – Summer Research (2023.5 ~ 2023.7)
+              </li>
+              <li>
+                <strong>Undergraduate at HKBU</strong> – Major in Biotechnology &amp; Minor in Computer Science (2019.9 ~ 2023.5)
+              </li>
             </ul>
           </div>
         </div>
-  
-        <!-- 工作与教育经历 -->
-        <div class="content anchor" id="experience">
-          <h2>Work and Education Experience</h2>
-          <table>
-            <tr>
-              <td>HKBU/Prof. Zhao Zhongying Lab</td>
-              <td>2021.3 ~ 2025.5</td>
-              <td>Research Assistant &amp; Student-helper</td>
-            </tr>
-            <tr>
-              <td>Tsinghua University</td>
-              <td>2023.5 ~ 2023.7</td>
-              <td>Summer Research</td>
-            </tr>
-            <tr>
-              <td>Undergraduate in HKBU</td>
-              <td>2019.9 ~ 2023.5</td>
-              <td>Major in Biotech &amp; Minor in CS</td>
-            </tr>
-          </table>
-        </div>
-  
-        <!-- 当前研究兴趣 -->
+        
+        <!-- [Research] 研究方向（与 Home 中的兴趣可重复或进一步展开） -->
         <div class="content anchor" id="research">
-          <h2>Current Research Interests</h2>
-          <ul>
-            <li>Fluorescence Microscopy Image Processing</li>
-            <li>Deep Learning in Image Denoising and Segmentation</li>
-            <li>Quantitative &amp; Developmental Biology</li>
-          </ul>
+          <div class="text front">
+            <h3>Research Interests</h3>
+            <ul>
+              <li>Fluorescence Microscopy Image Processing</li>
+              <li>Deep Learning in Image Denoising and Segmentation</li>
+              <li>Quantitative &amp; Developmental Biology</li>
+            </ul>
+          </div>
         </div>
-  
-        <!-- 项目与出版物 -->
+        
+        <!-- [Projects & Publications] 项目与出版物 -->
         <div class="content anchor" id="projects">
-          <h2>Projects &amp; Publications</h2>
-  
-          <!-- 项目 1 -->
-          <div class="publication">
-            <h3>CellINR: Implicitly Overcoming Non-Specific Fluorescence Noise of Microscopy Imaging</h3>
-            <img width="200" alt="CellINR" src="https://github.com/user-attachments/assets/74af179b-3e57-4236-9501-5af4abd0cc27" />
-            <div class="pubinfo">
-              <p style="font-size: 1.2em;"><i>XXXX 2025</i> Conference Submission</p>
-              <p>[<a href="#">Paper</a>] [<a href="#">Github</a>]</p>
+          <div class="text front">
+            <h3>Projects &amp; Publications</h3>
+            
+            <!-- 项目 1 -->
+            <div class="publication">
+              <div class="img">
+                <img class="img_responsive" src="https://github.com/user-attachments/assets/74af179b-3e57-4236-9501-5af4abd0cc27" alt="CellINR">
+              </div>
+              <div class="text">
+                <div class="title">
+                  CellINR: Implicitly Overcoming Non-Specific Fluorescence Noise of Microscopy Imaging
+                </div>
+                <div>
+                  <i>XXXX 2025, Conference Submission</i>
+                </div>
+                <div>
+                  [<a href="#">Paper</a>] [<a href="#">Github</a>]
+                </div>
+              </div>
             </div>
-          </div>
-  
-          <!-- 项目 2 -->
-          <div class="publication">
-            <h3>Deep Learning-based Enhancement of Fluorescence Labeling for Accurate Cell Lineage Tracing During Embryogenesis</h3>
-            <img width="200" alt="Deep Learning Enhancement" src="https://github.com/user-attachments/assets/056fd285-1a7e-4862-b53c-dd7abab65146" />
-            <div class="pubinfo">
-              <p style="font-size: 1.2em;"><i>Bioinformatics</i></p>
-              <p>Zelin Li, Dongying Xie, Yiming Ma, <strong>Cunmin Zhao</strong>, Sicheng You, Hong Yan, and Zhongying Zhao*</p>
-              <p>[<a href="https://academic.oup.com/bioinformatics/article/40/11/btae626/7825360" style="text-decoration: underline;">Paper</a>] 
-              [<a href="https://github.com/plcx/NucApp-develop" style="text-decoration: underline;">Github</a>]</p>
+            
+            <!-- 项目 2 -->
+            <div class="publication">
+              <div class="img">
+                <img class="img_responsive" src="https://github.com/user-attachments/assets/056fd285-1a7e-4862-b53c-dd7abab65146" alt="Deep Learning Enhancement">
+              </div>
+              <div class="text">
+                <div class="title">
+                  Deep Learning-based Enhancement of Fluorescence Labeling for Accurate Cell Lineage Tracing During Embryogenesis
+                </div>
+                <div>
+                  Bioinformatics
+                </div>
+                <div>
+                  Zelin Li, Dongying Xie, Yiming Ma, <strong>Cunmin Zhao</strong>, Sicheng You, Hong Yan, and Zhongying Zhao*
+                </div>
+                <div>
+                  [<a href="https://academic.oup.com/bioinformatics/article/40/11/btae626/7825360" style="text-decoration: underline;">Paper</a>] [<a href="https://github.com/plcx/NucApp-develop" style="text-decoration: underline;">Github</a>]
+                </div>
+              </div>
             </div>
-          </div>
-  
-          <!-- 项目 3 -->
-          <div class="publication">
-            <h3>Evaluation of Nanoplastics Toxicity in Soil Nematode Caenorhabditis elegans by iTRAQ-based Quantitative Proteomics</h3>
-            <img width="200" alt="Nanoplastics Toxicity" src="https://github.com/cuminzhao/Markdown-Resume-Template/assets/80189429/d1200366-3abf-4e58-9329-479c4c2adee2" />
-            <div class="pubinfo">
-              <p style="font-size: 1.2em;"><i>Science of The Total Environment</i></p>
-              <p>Gefei Huang, Yiming Ma, Dongying Xie, <strong>Cunmin Zhao</strong>, ... Zhongying Zhao*, Zongwei Cai*</p>
-              <p>[<a href="https://www.sciencedirect.com/science/article/abs/pii/S004896972207749X" style="text-decoration: underline;">Paper</a>]</p>
+            
+            <!-- 项目 3 -->
+            <div class="publication">
+              <div class="img">
+                <img class="img_responsive" src="https://github.com/cuminzhao/Markdown-Resume-Template/assets/80189429/d1200366-3abf-4e58-9329-479c4c2adee2" alt="Nanoplastics Toxicity">
+              </div>
+              <div class="text">
+                <div class="title">
+                  Evaluation of Nanoplastics Toxicity in Soil Nematode Caenorhabditis elegans by iTRAQ-based Quantitative Proteomics
+                </div>
+                <div>
+                  Science of The Total Environment
+                </div>
+                <div>
+                  Gefei Huang, Yiming Ma, Dongying Xie, <strong>Cunmin Zhao</strong>, ... Zhongying Zhao*, Zongwei Cai*
+                </div>
+                <div>
+                  [<a href="https://www.sciencedirect.com/science/article/abs/pii/S004896972207749X" style="text-decoration: underline;">Paper</a>]
+                </div>
+              </div>
             </div>
-          </div>
-  
-          <!-- 分割线标题：本科期间的科研项目 -->
-          <h2>Research Projects During Undergraduate Studies</h2>
-  
-          <!-- 项目 4 -->
-          <div class="publication">
-            <h3>A STUDY ON EVALUATING LOW-LIGHT ENHANCEMENT MODEL PERFORMANCE BASED ON THE LOL AND HKBU DATASETS</h3>
-            <img width="200" alt="Low-light Enhancement Study" src="https://github.com/cuminzhao/Markdown-Resume-Template/assets/80189429/e28d8106-aa58-43ad-9186-7eeab9853ed9" />
-            <div class="pubinfo">
-              <p style="font-size: 1.2em;">Research Project</p>
-              <p><strong>Zhao Cunmin</strong>, Lau Kin Tung, Liu Yulin, Yang Shu</p>
-              <p>[<a href="https://github.com/cuminzhao/Markdown-Resume-Template/files/12819132/group_2_comp3065_final_project.copy.pdf" style="text-decoration: underline;">Paper</a>]</p>
+            
+            <!-- 分割标题：本科期间的科研项目 -->
+            <div class="content heading">
+              <div class="text">
+                <div class="title">
+                  Research Projects During Undergraduate Studies
+                </div>
+              </div>
             </div>
-          </div>
-  
-          <!-- 项目 5 -->
-          <div class="publication">
-            <h3>Recompleting the Caenorhabditis briggsae Genome Assembly with Nanopore Long-Read Sequencing</h3>
-            <img width="200" alt="Genome Assembly" src="https://github.com/cuminzhao/Markdown-Resume-Template/assets/80189429/2c64baf4-5bb5-4338-aee0-506fc0d55b9a" />
-            <div class="pubinfo">
-              <p style="font-size: 1.2em;">Final Year Project Thesis</p>
-              <p><strong>Zhao Cunmin</strong>, supervised by Prof. Zhao Zhongying</p>
-              <p>[<a href="https://github.com/cuminzhao/Markdown-Resume-Template/files/12819436/FYP_thesis_19251211.pdf" style="text-decoration: underline;">Paper</a>]</p>
+            
+            <!-- 项目 4 -->
+            <div class="publication">
+              <div class="img">
+                <img class="img_responsive" src="https://github.com/cuminzhao/Markdown-Resume-Template/assets/80189429/e28d8106-aa58-43ad-9186-7eeab9853ed9" alt="Low-light Enhancement Study">
+              </div>
+              <div class="text">
+                <div class="title">
+                  A STUDY ON EVALUATING LOW-LIGHT ENHANCEMENT MODEL PERFORMANCE BASED ON THE LOL AND HKBU DATASETS
+                </div>
+                <div>
+                  Research Project
+                </div>
+                <div>
+                  <strong>Zhao Cunmin</strong>, Lau Kin Tung, Liu Yulin, Yang Shu
+                </div>
+                <div>
+                  [<a href="https://github.com/cuminzhao/Markdown-Resume-Template/files/12819132/group_2_comp3065_final_project.copy.pdf" style="text-decoration: underline;">Paper</a>]
+                </div>
+              </div>
             </div>
-          </div>
-  
-          <!-- 项目 6 -->
-          <div class="publication">
-            <h3>探究“多校劃片”政策對於學區房房價的影響 ----以北京市中關村東南小區為例</h3>
-            <img width="200" alt="多校劃片政策研究" src="https://github.com/cuminzhao/Markdown-Resume-Template/assets/80189429/cb1bbb15-60cd-474b-93bf-d763cc3d01aa" />
-            <div class="pubinfo">
-              <p style="font-size: 1.2em;">清华大学暑期研究项目</p>
-              <p><strong>趙存民</strong>, 林帛雨, 余穎欣</p>
-              <p>[<a href="https://github.com/cuminzhao/Markdown-Resume-Template/files/12819625/default.pdf" style="text-decoration: underline;">Paper</a>]</p>
+            
+            <!-- 项目 5 -->
+            <div class="publication">
+              <div class="img">
+                <img class="img_responsive" src="https://github.com/cuminzhao/Markdown-Resume-Template/assets/80189429/2c64baf4-5bb5-4338-aee0-506fc0d55b9a" alt="Genome Assembly">
+              </div>
+              <div class="text">
+                <div class="title">
+                  Recompleting the Caenorhabditis briggsae Genome Assembly with Nanopore Long-Read Sequencing
+                </div>
+                <div>
+                  Final Year Project Thesis
+                </div>
+                <div>
+                  <strong>Zhao Cunmin</strong>, supervised by Prof. Zhao Zhongying
+                </div>
+                <div>
+                  [<a href="https://github.com/cuminzhao/Markdown-Resume-Template/files/12819436/FYP_thesis_19251211.pdf" style="text-decoration: underline;">Paper</a>]
+                </div>
+              </div>
             </div>
+            
+            <!-- 项目 6 -->
+            <div class="publication">
+              <div class="img">
+                <img class="img_responsive" src="https://github.com/cuminzhao/Markdown-Resume-Template/assets/80189429/cb1bbb15-60cd-474b-93bf-d763cc3d01aa" alt="多校劃片政策研究">
+              </div>
+              <div class="text">
+                <div class="title">
+                  探究“多校劃片”政策對於學區房房價的影響 ----以北京市中關村東南小區為例
+                </div>
+                <div>
+                  清华大学暑期研究项目
+                </div>
+                <div>
+                  <strong>趙存民</strong>, 林帛雨, 余穎欣
+                </div>
+                <div>
+                  [<a href="https://github.com/cuminzhao/Markdown-Resume-Template/files/12819625/default.pdf" style="text-decoration: underline;">Paper</a>]
+                </div>
+              </div>
+            </div>
+            
           </div>
-  
-        </div> <!-- end projects -->
+        </div>
+        
       </div> <!-- end container body -->
     </div> <!-- end outercontainer -->
+    
+    <!-- 平滑滚动脚本（示例中的效果） -->
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]', {speed: 1000});
+    </script>
   </body>
 </html>
