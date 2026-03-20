@@ -1,5 +1,5 @@
  <center>
-     <h1>(https://cunminzhao.github.io/)</h1>
+     <h1>https://cunminzhao.github.io/</h1>
  </center>
 
 ## 个人信息 
